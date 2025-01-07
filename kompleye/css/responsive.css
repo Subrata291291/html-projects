@@ -1,0 +1,36 @@
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+#sm_menu_ham span {
+    background-color: #337ab7 !important;
+}
+#sm_menu_ham{
+  top: 64px !important; 
+  position: absolute !important; 
+}
+.sm_menu_outer {
+  top: 112px !important;
+}
+.banner_area {
+    padding: 87px 0px;
+}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+#sm_menu_ham span {
+    background-color: #337ab7 !important;
+}
+#sm_menu_ham{
+  top: 58px !important; 
+  position: absolute !important; 
+}
+.sm_menu_outer {
+  top: 103px !important;
+}
+.header_menu .navbar.navbar-default .navbar-header .navbar-brand {
+    line-height: 85px;
+}
+}

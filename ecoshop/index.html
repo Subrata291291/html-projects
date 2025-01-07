@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCSS New Project</title>
+    <link rel="icon" type="image/x-icon" href="images/drink.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Slick css-->
+    <link rel="stylesheet" type="text/css" href="scss/slick.css">
+    <link rel="stylesheet" type="text/css" href="scss/slick-theme.css">
+    <!--Slick css-->
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+    <!--Loader Area-->
+    <div id="preloader">
+        <img id="loading-image" src="images/preloader.gif" alt="Loading..." />
+      </div>
+      <!--Loader Area-->
+    <!--Topbar Area-->
+    <section class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="top-left">
+                        <ul class="d-flex align-items-center">
+                            <li>
+                                <a href="#">Account</a>
+                            </li>
+                            <li class="track-order">
+                                <a href="#">Track Order</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="top-right">
+                        <ul class="d-flex align-items-center float-md-end">
+                            <li>
+                                <a href="#"><span><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.23801 8.53196C7.50029 10.7178 9.16931 12.4839 11.3767 13.7235C11.5568 13.8249 11.6712 13.8023 11.8147 13.6555C12.2344 13.2261 12.653 12.7946 13.1007 12.3965C13.925 11.6639 14.9111 11.6596 15.704 12.4137C16.565 13.2315 17.4054 14.0709 18.22 14.9351C19.0097 15.7733 19.0183 16.7886 18.2566 17.6452C17.7377 18.2299 17.1896 18.7931 16.6168 19.325C15.6771 20.1967 14.5378 20.2593 13.3478 20.0381C11.6529 19.7231 10.1327 18.9776 8.69029 18.0767C5.22711 15.9114 2.60544 12.9888 0.899747 9.26775C0.458488 8.3054 0.132668 7.30313 0.0258596 6.23936C-0.0917375 5.07094 0.181218 4.04385 1.06158 3.21312C1.48881 2.8107 1.88691 2.37699 2.30552 1.96594C3.26571 1.02517 4.34459 1.01438 5.31126 1.95084C6.0697 2.68663 6.81952 3.43321 7.55207 4.19382C8.49393 5.17235 8.49609 6.16492 7.57149 7.16503C7.15505 7.616 6.71703 8.04323 6.23801 8.53196ZM1.16299 5.81644C1.12523 5.82507 1.08855 5.8337 1.05079 5.84341C1.26225 6.61696 1.4025 7.42072 1.69811 8.16083C3.24414 12.021 5.87335 14.9782 9.38508 17.1619C10.6948 17.9764 12.0747 18.6485 13.6153 18.9301C14.6672 19.1222 15.5756 18.9517 16.2801 18.0606C16.5693 17.6948 16.9383 17.3917 17.2652 17.055C17.8035 16.5005 17.8089 16.1251 17.2716 15.5813C16.538 14.839 15.799 14.1022 15.0578 13.3675C14.5723 12.8863 14.2044 12.8841 13.7124 13.3642C13.2453 13.8195 12.7922 14.2888 12.325 14.7441C11.9603 15.0991 11.6313 15.1627 11.1911 14.9135C10.5805 14.5672 9.95364 14.2316 9.39695 13.8087C7.68693 12.5098 6.22075 10.9853 5.25408 9.03795C4.91855 8.3615 4.98544 8.10149 5.52164 7.58579C5.94455 7.17905 6.36639 6.77016 6.77421 6.34832C7.23489 5.87254 7.23381 5.5068 6.76666 5.02994C6.01792 4.2661 5.26163 3.50981 4.49994 2.75784C4.02848 2.29176 3.62498 2.29284 3.14272 2.75784C2.71981 3.16565 2.31955 3.59612 1.89339 3.99854C1.36798 4.49266 1.10905 5.0882 1.16299 5.81644Z" fill="#27AE60"></path>
+                                    <path d="M11.0349 0C11.953 0.295611 12.829 0.486571 13.6274 0.850151C17.0614 2.4102 19.1944 5.04373 19.969 8.75073C20.0683 9.22436 19.9259 9.51457 19.5741 9.58146C19.2008 9.65159 18.9549 9.44337 18.8535 8.95032C18.3043 6.26177 16.877 4.16445 14.5962 2.64971C13.5637 1.96463 12.4298 1.52013 11.215 1.27954C11.0877 1.25473 10.9529 1.23531 10.8407 1.17705C10.5796 1.04111 10.4372 0.799444 10.558 0.529726C10.6443 0.333371 10.8536 0.192039 11.0349 0Z" fill="#27AE60"></path>
+                                    <path d="M16.3863 9.17931C16.3776 9.48679 16.2363 9.70472 15.9191 9.75542C15.6095 9.80505 15.3797 9.66804 15.2815 9.36703C15.193 9.09515 15.1574 8.80602 15.0614 8.53846C14.3839 6.64504 13.0795 5.43023 11.1203 4.9361C11.0318 4.91345 10.9423 4.89834 10.8538 4.87569C10.5053 4.78722 10.3144 4.53908 10.3597 4.23376C10.4082 3.90686 10.6823 3.7159 11.0458 3.75474C13.5294 4.02446 16.095 6.5803 16.3712 9.05739C16.3755 9.09623 16.3809 9.13507 16.3863 9.17931Z" fill="#27AE60"></path>
+                                </svg></span> +00645 4568</a>
+                            </li>
+                            <li class="top-divider">|</li>
+                            <li>
+                                <a href="mailto:subrata.haldar@codeclouds.com"><span><svg width="20" height="21" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.24976 11.6506C6.05064 11.6506 3.85153 11.6513 1.65176 11.65C0.57874 11.6493 0.000808974 11.0669 0.000161795 9.98673C0.000161795 7.2058 -0.000485385 4.42422 0.000808974 1.64264C0.00145615 0.587739 0.587154 0.000747299 1.64141 0.000747299C6.072 0.000100119 10.5032 -0.000547061 14.9338 0.000747299C15.9855 0.000747299 16.5686 0.589034 16.5693 1.64782C16.5705 4.4294 16.5699 7.21033 16.5693 9.99191C16.5686 11.0701 15.9894 11.65 14.9125 11.65C12.6914 11.6513 10.4709 11.6506 8.24976 11.6506ZM1.7016 0.990285C1.79867 1.09578 1.86533 1.17473 1.93782 1.24722C3.65802 2.95836 5.37887 4.6695 7.10037 6.38C7.88928 7.16373 8.67949 7.16503 9.4671 6.38259C11.1886 4.67274 12.9088 2.96159 14.6297 1.2498C14.7028 1.17732 14.7701 1.09901 14.8711 0.990285C10.4651 0.990285 6.10695 0.990285 1.7016 0.990285ZM10.709 6.50037C10.0263 7.25628 9.3545 7.93905 8.27694 7.93776C7.19874 7.93582 6.53732 7.23492 5.88626 6.53726C4.51359 7.9397 3.1584 9.32467 1.86016 10.6514C6.1173 10.6514 10.4748 10.6514 14.7727 10.6514C13.4382 9.28842 12.0888 7.90993 10.709 6.50037ZM5.03069 5.86937C3.68844 4.50965 2.33324 3.13633 0.999407 1.78502C0.999407 4.47146 0.999407 7.19609 0.999407 9.97055C2.38761 8.55776 3.73827 7.18444 5.03069 5.86937ZM11.5387 5.80012C12.8661 7.15079 14.2193 8.52734 15.5752 9.90648C15.5752 7.18444 15.5752 4.46046 15.5752 1.71318C14.1993 3.10592 12.8473 4.47535 11.5387 5.80012Z" fill="#27AE60"></path>
+                                </svg></span> info@ecoshop.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Topbar Area-->
+    <!--Logo Area-->
+    <section class="logo-area position-sticky" id="logo-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-2 col-md-2 d-lg-none">
+                    <div class="mob-menu">
+                        <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><img src="images/menu.png" width="24px"></a>
+                    </div>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="images/logo.webp" alt="logo"></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div>
+                            <nav class="navbar navbar-expand-lg d-block">
+                                  <div class="" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mx-auto">
+                                      <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">About</a>
+                                      </li>
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Shop
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><hr class="dropdown-divider"></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><hr class="dropdown-divider"></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Services</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact Us</a>
+                                      </li>
+                                    </ul>
+                                  </div>       
+                            </nav>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg-3">
+                    <div class="logo-area-left">
+                        <img src="images/logo.webp" alt="logo" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-4 col-md-4 col-lg-6 d-none d-md-block">
+                    <div class="logo-area-mid">
+                        <form class="search-form" action="" method="get">
+                            <ul class="d-flex align-items-center justify-content-between">
+                                <li class="w-100">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                </li>
+                                <li class="categrory-area d-md-none d-lg-block">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>All Categories</option>
+                                        <option value="1">Vegetables</option>
+                                        <option value="2">Fruits</option>
+                                        <option value="3">Meat</option>
+                                        <option value="4">Bread</option>
+                                        <option value="5">Sea Food</option>
+                                        <option value="6">Drinks</option>
+                                      </select>
+                                </li>
+                                <li>
+                                    <button class="btn btn-outline-success search-btn" type="submit">Search</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <div class="logo-area-right float-end">
+                        <ul class="d-flex align-items-center">
+                            <li>
+                                <a href="#"><svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.97214 5.02422C3.71435 5.18246 2.6616 5.7007 1.7705 6.60267C0.970091 7.40971 0.489057 8.26421 0.213053 9.37586C-0.275867 11.3024 0.0789948 13.2013 1.25398 14.9855C2.00708 16.1288 2.98097 17.1772 4.76711 18.7754C5.90266 19.7921 9.36848 22.7591 9.53802 22.858C9.69574 22.953 9.75488 22.9648 10.09 22.9648C10.4252 22.9648 10.4843 22.953 10.642 22.858C10.8116 22.7591 14.2853 19.7881 15.413 18.7754C17.207 17.1692 18.173 16.1249 18.9261 14.9855C20.1011 13.2013 20.4559 11.3024 19.967 9.37586C19.691 8.26421 19.21 7.40971 18.4096 6.60267C17.6131 5.7996 16.7614 5.33674 15.6456 5.09938C15.0857 4.9807 14.0526 4.96883 13.5637 5.0796C12.1995 5.3763 11.1546 6.0607 10.2004 7.27916L10.09 7.41762L9.98357 7.27916C9.04122 6.08443 8.01212 5.40004 6.69913 5.09938C6.30878 5.00839 5.4098 4.96883 4.97214 5.02422ZM6.28907 6.23081C7.40885 6.42861 8.37487 7.0774 9.13979 8.14948C9.26991 8.33542 9.43156 8.55696 9.49465 8.64795C9.78643 9.05937 10.3936 9.05937 10.6854 8.64795C10.7485 8.55696 10.9102 8.33542 11.0403 8.14948C12.0851 6.68575 13.5401 5.9974 15.1251 6.21498C16.8837 6.4563 18.2558 7.69058 18.7802 9.50641C19.1942 10.9424 19.0128 12.4497 18.2597 13.8066C17.6289 14.942 16.5761 16.1328 14.7427 17.7824C13.8555 18.5776 10.1255 21.7978 10.09 21.7978C10.0506 21.7978 6.33638 18.5895 5.4374 17.7824C2.61823 15.2466 1.50633 13.6642 1.23821 11.8088C1.06472 10.6101 1.31312 9.32047 1.91639 8.30377C2.82326 6.77278 4.58968 5.9341 6.28907 6.23081Z" fill="black"></path>
+                                    <path d="M20.9177 10.1087C20.4127 10.1065 19.9812 9.97337 19.6233 9.70916C19.2653 9.44496 18.9915 9.06037 18.8019 8.5554C18.6123 8.05043 18.5174 7.44212 18.5174 6.73047C18.5174 6.02095 18.6123 5.41477 18.8019 4.91193C18.9937 4.40909 19.2685 4.02557 19.6265 3.76136C19.9866 3.49716 20.4169 3.36506 20.9177 3.36506C21.4184 3.36506 21.8477 3.49822 22.2057 3.76456C22.5636 4.02876 22.8374 4.41229 23.027 4.91513C23.2188 5.41584 23.3147 6.02095 23.3147 6.73047C23.3147 7.44425 23.2199 8.05362 23.0302 8.55859C22.8406 9.06143 22.5668 9.44602 22.2089 9.71236C21.8509 9.97656 21.4205 10.1087 20.9177 10.1087ZM20.9177 9.25533C21.3608 9.25533 21.7071 9.03906 21.9564 8.60653C22.2078 8.17401 22.3335 7.54865 22.3335 6.73047C22.3335 6.18714 22.276 5.72798 22.1609 5.35298C22.048 4.97585 21.885 4.69034 21.6719 4.49645C21.461 4.30043 21.2096 4.20241 20.9177 4.20241C20.4766 4.20241 20.1304 4.41974 19.879 4.8544C19.6275 5.28906 19.5008 5.91442 19.4986 6.73047C19.4986 7.27592 19.5551 7.73722 19.668 8.11435C19.7831 8.48935 19.9461 8.77379 20.157 8.96768C20.3679 9.15945 20.6215 9.25533 20.9177 9.25533Z" fill="#F9FFFB"></path>
+                                </svg></a>
+                            </li>
+                            <li class="cart-icon position-relative">
+                                <a href="#">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.1568 8.1772C16.0284 7.84626 15.7343 7.81766 14.2887 7.81766H13.0875V7.2947C13.0875 6.48165 12.9716 5.91374 12.6899 5.32949C12.1804 4.2713 11.3272 3.5318 10.2213 3.1886C9.68279 3.02517 8.87923 2.95572 8.39047 3.02926C7.03602 3.24172 5.88039 4.09562 5.29223 5.31315C5.00642 5.90966 4.89045 6.48165 4.89045 7.2947V7.82175H3.68511C2.23954 7.82175 1.94546 7.85035 1.81705 8.19354C1.75078 8.41008 1.12948 13.0637 0.864385 15.0697C0.632431 16.8184 0.417045 18.469 0.259648 19.711C-0.0137267 21.8519 -0.00544266 21.8846 0.00284141 21.9214V21.9255C0.0401198 22.0644 0.408761 22.428 0.520596 22.5342L1.00521 23H16.9438L17.3041 22.6854C17.4657 22.5424 18 22.0562 18 21.8152C18 21.6517 16.1899 8.27117 16.1568 8.1772ZM16.6911 21.5046C16.687 21.5332 16.6538 21.619 16.5958 21.6803L16.513 21.7702H1.46498L1.2496 21.5414L2.09871 15.2863C2.39694 13.0596 2.66203 11.1189 2.81943 9.95855C2.88984 9.45193 2.92298 9.19453 2.93955 9.06788C3.49872 9.06379 5.94252 9.0597 8.98278 9.0597H15.0302L15.0384 9.10465C15.1047 9.4315 16.6621 21.141 16.6911 21.5046ZM6.1372 7.82175V7.35598C6.1372 7.04139 6.17862 6.6083 6.22418 6.40811C6.46856 5.38669 7.30111 4.5573 8.34077 4.29173C8.77568 4.1855 9.48811 4.22228 9.92302 4.37753H9.92717C10.3828 4.5287 10.7556 4.77384 11.0994 5.14972C11.6544 5.74623 11.8408 6.28145 11.8408 7.27018V7.82175H6.1372Z" fill="black"></path>
+                                        <path d="M17.0036 10.1087C16.4986 10.1065 16.0672 9.97337 15.7092 9.70916C15.3513 9.44496 15.0775 9.06037 14.8878 8.5554C14.6982 8.05043 14.6034 7.44212 14.6034 6.73047C14.6034 6.02095 14.6982 5.41477 14.8878 4.91193C15.0796 4.40909 15.3544 4.02557 15.7124 3.76136C16.0725 3.49716 16.5029 3.36506 17.0036 3.36506C17.5043 3.36506 17.9336 3.49822 18.2916 3.76456C18.6495 4.02876 18.9233 4.41229 19.113 4.91513C19.3047 5.41584 19.4006 6.02095 19.4006 6.73047C19.4006 7.44425 19.3058 8.05362 19.1162 8.55859C18.9265 9.06143 18.6527 9.44602 18.2948 9.71236C17.9368 9.97656 17.5064 10.1087 17.0036 10.1087ZM17.0036 9.25533C17.4468 9.25533 17.793 9.03906 18.0423 8.60653C18.2937 8.17401 18.4194 7.54865 18.4194 6.73047C18.4194 6.18714 18.3619 5.72798 18.2468 5.35298C18.1339 4.97585 17.9709 4.69034 17.7579 4.49645C17.5469 4.30043 17.2955 4.20241 17.0036 4.20241C16.5625 4.20241 16.2163 4.41974 15.9649 4.8544C15.7135 5.28906 15.5867 5.91442 15.5846 6.73047C15.5846 7.27592 15.641 7.73722 15.754 8.11435C15.869 8.48935 16.032 8.77379 16.2429 8.96768C16.4539 9.15945 16.7074 9.25533 17.0036 9.25533Z" fill="#F9FFFB"></path>
+                                    </svg>
+                                    <span>0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.992 19.729C19.9004 18.043 19.438 16.4886 18.617 15.1176C17.6046 13.4237 16.2096 12.1244 14.4679 11.2475C14.0773 11.0522 13.878 10.9645 13.3878 10.7772L12.9334 10.6138L13.4954 10.1833C14.5476 9.38621 15.3408 8.08689 15.6118 6.70387C15.6955 6.28936 15.7035 5.22917 15.6317 4.78278C15.4643 3.77043 14.9582 2.70227 14.2766 1.92507C13.4356 0.976485 12.2439 0.30291 11.0084 0.079713C10.7971 0.0398565 10.1515 0 9.75289 0C9.60542 0 9.55361 0.00398565 9.53766 0.0079713H9.53368C9.49781 0.011957 9.42607 0.0239139 9.33838 0.0358709H9.32642C9.25468 0.0438422 9.17896 0.0557991 9.10323 0.0677561C8.1666 0.195297 7.01873 0.73336 6.25349 1.41092C5.27302 2.27581 4.59147 3.50339 4.38023 4.78278C4.3045 5.22917 4.31646 6.28936 4.40016 6.70387C4.67118 8.08689 5.46433 9.38621 6.51654 10.1833L7.07852 10.6138L6.62415 10.7772C6.13392 10.9645 5.93464 11.0522 5.54404 11.2475C3.80231 12.1244 2.40335 13.4237 1.39498 15.1176C0.569948 16.4926 0.107613 18.043 0.0159426 19.729L0 20H0.255082H1.1957H18.8123H19.4938H20.008L19.992 19.729ZM5.56397 4.98605C5.73934 3.92188 6.28537 2.95735 7.10642 2.25986C7.91949 1.57035 8.94779 1.19171 10 1.19171C10.2352 1.19171 10.4743 1.21164 10.7094 1.24751C13.1606 1.64607 14.8386 3.95775 14.444 6.39299C14.2686 7.45715 13.7226 8.42168 12.9016 9.11917C12.0885 9.80869 11.0602 10.1873 10.008 10.1873C9.77282 10.1873 9.53368 10.1674 9.29853 10.1315C6.84735 9.72898 5.16939 7.42128 5.56397 4.98605ZM2.54285 15.5281C3.73057 13.7146 5.31287 12.4751 7.25389 11.8414C8.17059 11.5424 9.09526 11.391 10.004 11.391C10.9127 11.391 11.8374 11.5424 12.7541 11.8414C14.6951 12.4751 16.2814 13.7146 17.4651 15.5281C18.047 16.4169 18.5134 17.6963 18.7086 18.8721H1.29932C1.49462 17.6963 1.96094 16.4169 2.54285 15.5281Z" fill="black"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Logo Area-->
+    <!--Menu Area-->
+    <section class="menu-area position-relative" id="menu-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-6 col-lg-3">
+                    <div class="menu-category shadow">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  <span><i class="fa-solid fa-bars"></i></span> All Categories
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li>
+                                        <a href="#"><span><img src="images/vegetable.png" width="24px;"></span> Vegetables</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><img src="images/no-chicken.png" width="24px;"></span> Non-Veg</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><img src="images//fruits.png" width="24px;"></span> Fruits</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><img src="images/drink.png" width="24px;"></span> Milk &amp; Drinks</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><img src="images/juice.png" width="24px;"></span> Juice</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><img src="images/seafood.png" width="24px;"></span> Sea Food</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-6 d-none d-md-none d-lg-block">
+                    <nav class="navbar navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Shop
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                              </li>
+                            </ul>
+                          </div>       
+                    </nav>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3">
+                    <div class="menu-area-right float-end">
+                        <button class="login-btn">My Account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Menu Area-->
+    <!--Banner Area-->
+    <section class="banner-area">
+        <div class="container">
+            <div class="banner-slider">
+                <div class="slider position-relative slider-1">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <div class="banner-content">
+                                <h3>Fresh Grocery</h3>
+                                <h1>Get the great deal for grocery</h1>
+                                <p>You get into the 2k+ best Products in Flash offer with as into the find to
+                                    makein shaped sofa for sale.</p>
+                                <button class="shop-btn">Order Now <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-none d-md-block">
+                            <div class="banner-image">
+                                <img src="images/banner-slider1.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider position-relative slider-1">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <div class="banner-content">
+                                <h3>Fresh Grocery</h3>
+                                <h1>We Serve Fresh &amp; Organic Food</h1>
+                                <p>You get into the 2k+ best Products in br Flash offer with as in shaped sofa for sale.</p>
+                                <button class="shop-btn">Order Now <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-none d-md-block">
+                            <div class="banner-image">
+                                <img src="images/banner-slider2.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Banner Area-->
+    <!--Free Shipping Area-->
+    <section class="shipping-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <ul class="d-md-flex justify-content-md-between">
+                    <li>
+                        <div class="shipping-box">
+                            <ul class="d-flex justify-content-center align-items-center align-items-md-start">
+                                <li>
+                                    <span>
+                                        <svg width="32" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1H5.63636V24.1818H35" stroke="#F9FFFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
+                                            <path d="M8.72763 35.0021C10.4347 35.0021 11.8185 33.6183 11.8185 31.9112C11.8185 30.2042 10.4347 28.8203 8.72763 28.8203C7.02057 28.8203 5.63672 30.2042 5.63672 31.9112C5.63672 33.6183 7.02057 35.0021 8.72763 35.0021Z" stroke="#F9FFFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
+                                            <path d="M31.9073 35.0021C33.6144 35.0021 34.9982 33.6183 34.9982 31.9112C34.9982 30.2042 33.6144 28.8203 31.9073 28.8203C30.2003 28.8203 28.8164 30.2042 28.8164 31.9112C28.8164 33.6183 30.2003 35.0021 31.9073 35.0021Z" stroke="#F9FFFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
+                                            <path d="M34.9982 1H11.8164V18H34.9982V1Z" stroke="#F9FFFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
+                                            <path d="M11.8164 7.17969H34.9982" stroke="#F9FFFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li>
+                                    <h4>Free Shipping</h4>
+                                    <p>When ordering over $100</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="shipping-box">
+                            <ul class="d-flex justify-content-center align-items-center align-items-md-start">
+                                <li>
+                                    <span>
+                                        <svg width="32" height="37" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M31 17.4492C31 25.6992 24.25 32.4492 16 32.4492C7.75 32.4492 1 25.6992 1 17.4492C1 9.19922 7.75 2.44922 16 2.44922C21.85 2.44922 26.95 5.74922 29.35 10.6992" stroke="#F9FFFB" stroke-width="2" stroke-miterlimit="10"></path>
+                                            <path d="M30.7 2L29.5 10.85L20.5 9.65" stroke="#F9FFFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li>
+                                    <h4>Free Return</h4>
+                                    <p>Get Return within 7 days</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="shipping-box">
+                            <ul class="d-flex justify-content-center align-items-center align-items-md-start">
+                                <li>
+                                    <span>
+                                        <svg width="32" height="37" viewBox="0 0 32 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.6654 18.668H9.33203V27.0013H22.6654V18.668Z" stroke="#F9FFFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
+                                            <path d="M12.668 18.6654V13.6654C12.668 11.832 14.168 10.332 16.0013 10.332C17.8346 10.332 19.3346 11.832 19.3346 13.6654V18.6654" stroke="#F9FFFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
+                                            <path d="M31 22C31 30.3333 24.3333 37 16 37C7.66667 37 1 30.3333 1 22V5.33333L16 2L31 5.33333V22Z" stroke="#F9FFFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li>
+                                    <h4>Secure Payment</h4>
+                                    <p>100% Secure Online Payment</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="shipping-box">
+                            <ul class="d-flex justify-content-center align-items-center align-items-md-start">
+                                <li>
+                                    <span>
+                                        <svg width="32" height="37" viewBox="0 0 32 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 13H5.5C2.95 13 1 11.05 1 8.5V1H7" stroke="#F9FFFB" stroke-width="2" stroke-miterlimit="10"></path>
+                                            <path d="M25 13H26.5C29.05 13 31 11.05 31 8.5V1H25" stroke="#F9FFFB" stroke-width="2" stroke-miterlimit="10"></path>
+                                            <path d="M16 28V22" stroke="#F9FFFB" stroke-width="2" stroke-miterlimit="10"></path>
+                                            <path d="M16 22C11.05 22 7 17.95 7 13V1H25V13C25 17.95 20.95 22 16 22Z" stroke="#F9FFFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
+                                            <path d="M25 34H7C7 30.7 9.7 28 13 28H19C22.3 28 25 30.7 25 34Z" stroke="#F9FFFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li>
+                                    <h4>Best Quality</h4>
+                                    <p>Original Product Guarenteed </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--Free Shipping Area-->
+    <!--Product Category Area-->
+    <section class="product-cat-area">
+        <div class="container">
+            <div class="title-box">
+                <h3>Product Category</h3>
+            </div>
+            <div class="product-slider">
+                <div class="slider position-relative  text-center">
+                    <div class="product-box">
+                        <a href="#"><img src="images/drink.png" width="100px" alt="/"></a>
+                    </div>
+                    <div class="product-info">
+                        <h5>Drinks</h5>
+                    </div>
+                </div>
+                <div class="slider position-relative  text-center">
+                    <div class="product-box">
+                        <a href="#"><img src="images/fruits.png" width="100px" alt="/"></a>
+                    </div>
+                    <div class="product-info">
+                        <h5>Fruits</h5>
+                    </div>
+                </div>
+                <div class="slider position-relative  text-center">
+                    <div class="product-box">
+                        <a href="#"><img src="images/juice.png" width="100px" alt="/"></a>
+                    </div>
+                    <div class="product-info">
+                        <h5>Juice</h5>
+                    </div>
+                </div>
+                <div class="slider position-relative text-center">
+                    <div class="product-box">
+                        <a href="#"><img src="images/no-chicken.png" width="100px" alt="/"></a>
+                    </div>
+                    <div class="product-info">
+                        <h5>Meat</h5>
+                    </div>
+                </div>
+                <div class="slider position-relative text-center">
+                    <div class="product-box">
+                        <a href="#"><img src="images/seafood.png" width="100px" alt="/"></a>
+                    </div>
+                    <div class="product-info">
+                        <h5>Sea-Food</h5>
+                    </div>
+                </div>
+                <div class="slider position-relative text-center">
+                    <div class="product-box">
+                        <a href="#"><img src="images/vegetable.png" width="100px" alt="/"></a>
+                    </div>
+                    <div class="product-inf0">
+                        <h5>Vegetables</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Product Category Area-->
+    <!--Category Area-->
+    <section class="category-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="category-box category-box0">
+                        <div class="cat-content">
+                            <p>Fruits</p>
+                            <h3>Healthy & Goods Fruits</h3>
+                            <button class="shop-btn">Shop Now <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                        </div>
+                        <div class="cat-pic">
+                            <img src="images/c-shop-img-1.webp">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="category-box category-box1">
+                        <div class="cat-pic">
+                            <img src="images/c-shop-img-2.webp">
+                        </div>
+                        <div class="cat-content">
+                            <p>Vegetable</p>
+                            <h3>Fresh &amp; Good Vegetables</h3>
+                            <button class="shop-btn">Shop Now <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="category-box category-box2">
+                        <div class="cat-content">
+                            <p>Juices</p>
+                            <h3>Best Fruits Juices</h3>
+                            <button class="shop-btn">Shop Now <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                        </div>
+                        <div class="cat-pic">
+                            <img src="images/c-shop-img-3.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Category Area-->
+    <!--Fresh vegetables Area-->
+    <section class="fresh-veg-area">
+        <div class="container">
+            <div class="title-box">
+                <h3>Shop By Category</h3>
+            </div>
+            <div class="fresh-product-slider">
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-1.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Fresh Red Tomatos</h3>
+                        <h4><span><del>$40.00</del></span>$32.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-2.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Fresh White Egg</h3>
+                        <h4><span><del>$8.00</del></span>$6.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-3.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Fresh Watermelon</h3>
+                        <h4><span><del></del></span>$60.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-4.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Red Meat</h3>
+                        <h4><span><del>$820.00</del></span>$700.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-5.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Bottle Gourd</h3>
+                        <h4><span><del>$44.00</del></span>$30.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-6.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Mushroom</h3>
+                        <h4><span><del></del></span>$30.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-7.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Chicken Pattis</h3>
+                        <h4><span><del>$35.00</del></span>$30.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-8.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Banana</h3>
+                        <h4><span><del></del></span>$40.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-9.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Orange</h3>
+                        <h4><span><del>&60.00</del></span>$50.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-10.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Sweet Lime</h3>
+                        <h4><span><del></del></span>$80.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-11.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Cherry</h3>
+                        <h4><span><del></del></span>$120.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-12.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Tropical Mangostreen</h3>
+                        <h4><span><del></del></span>$190.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fresh vegetables Area-->
+    <!--Sale Area-->
+    <section class="sale-area">
+        <div class="container">
+            <div class="sale-box">
+                <div class="countdown-section d-flex">
+                    <div class="countdown-items text-center d-none">
+                        <span id="day" class="number d-flex" style="color: red;"></span>
+                        <span class=" text">Days</span>
+                    </div>
+                    <div class="countdown-items text-center">
+                        <span id="hour" class="number d-flex shadow" style="color: skyblue;"></span>
+                        <span class="text">Hours</span>
+                    </div>
+                    <div class="countdown-items text-center">
+                        <span id="minute" class="number d-flex shadow" style="color: green;"></span>
+                        <span class="text">Minutes</span>
+                    </div>
+                    <div class="countdown-items text-center">
+                        <span id="second" class="number  d-flex shadow" style="color: red;"></span>
+                        <span class="text">Seconds</span>
+                    </div>
+                </div>
+                <h2 id="countdown-text">Woo! Sale is Live</h2>
+                <p>
+                    You get into the 2k+ best Products in br Flash offer with as in shaped sofa for sale.
+                </p>
+                <button class="shop-btn">Grab Deal <span><i class="fa-solid fa-chevron-right"></i></span></button>
+            </div>
+        </div>
+    </section>
+    <!--Sale Area-->
+    <!--New Arrival Area-->
+    <section class="new-arrivals-area">
+        <div class="container">
+            <div class="title-box">
+                <h3>New Arrivals</h3>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-1.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Fresh Red Tomatos</h3>
+                        <h4><span><del>$40.00</del></span>$32.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-2.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Fresh White Egg</h3>
+                        <h4><span><del>$8.00</del></span>$6.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-3.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Fresh Watermelon</h3>
+                        <h4><span><del></del></span>$60.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-4.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Red Meat</h3>
+                        <h4><span><del>$820.00</del></span>$700.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-5.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Bottle Gourd</h3>
+                        <h4><span><del>$44.00</del></span>$30.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-6.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Mushroom</h3>
+                        <h4><span><del></del></span>$30.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-7.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Chicken Pattis</h3>
+                        <h4><span><del>$35.00</del></span>$30.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-8.webp" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Banana</h3>
+                        <h4><span><del></del></span>$40.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--New Arrival Area-->
+    <!--Fresh Fruit Area-->
+    <section class="fresh-fruit-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="fresh-fruit-left">
+                        <div class="cat-content">
+                            <p>Fresh Fruits</p>
+                            <h3>Healthy & Goods Fruits</h3>
+                            <button class="shop-btn">Shop Now <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="fresh-fruit-right">
+                        <div class="cat-content">
+                            <p>Fresh vegetables</p>
+                            <h3>The 14 Most Nutrient-Dense Vegetables</h3>
+                            <button class="shop-btn">Shop Now <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fresh Fruit Area-->
+    <!--Liquid Area-->
+    <section class="fresh-veg-area">
+        <div class="container">
+            <div class="title-box">
+                <h3>Liquid Items</h3>
+            </div>
+            <div class="fresh-product-slider">
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-13.png" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Jacobs Creek Crisp Rose Wine 750ml </h3>
+                        <h4><span><del>$1440.00</del></span>$1320.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-14.png" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Antares Cabernet Sauvignon 375ml</h3>
+                        <h4><span><del></del></span>$680.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-15.png" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Budweiser Magnum Strong Beer  500 Ml</h3>
+                        <h4><span><del></del></span>$140.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-16.png" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Budweiser Magnum Strong Beer  650 Ml</h3>
+                        <h4><span><del></del></span>$195.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-17.png" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Budweiser Premium Beer 650 Ml</h3>
+                        <h4><span><del>$160.00</del></span>$150.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-18.png" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">Signature Premier Grain Whisky  750</h3>
+                        <h4><span><del></del></span>$990.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+                <div class="slider position-relative">
+                    <div class="fresh-product-box text-center shadow">
+                        <a href="#" class="fresh-product-pic"><img src="images/p-img-20.png" alt="/"></a>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <h3 class="text-truncate">William Lawsons Blended Scotch Whis</h3>
+                        <h4><span><del></del></span>$1400.00</h4>
+                        <button class="shop-btn">Add to Cart <span><i class="fa-solid fa-basket-shopping"></i></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Liquid Area-->
+    <!--Footer Area-->
+    <section class="footer-area">
+        <div class="footer-top-area">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 col-md-0 col-lg-6">
+                        <div class="footer-top-left">
+                            
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="footer-top-right text-center">
+                            <h3>Get <span><b>20%</b></span>Off Discount Coupon</h3>
+                            <p>
+                                by Subscribe our Newsletter
+                            </p>
+                            <form class="position-relative">
+                                <input type="email" placeholder="Email Address" required>
+                                <span><img src="images/mail.gif" width=""></span>
+                                <button type="submit" value="" class="coupon-btn position-absolute">Get The Coupon</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="footer-logo">
+                        <img src="images/logo.webp" alt="logo">
+                        <p class="text-white mt-4">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact a that a reader will be distracted by the readable content of a page when our looking at its layout.
+                        </p>
+                        <ul class="d-flex">
+                            <li class="follow-us-icon">
+                                <a href="#"><img src="images/follow-us.gif"></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 offset-lg-1">
+                    <div class="footer-menu">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Shop</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="footer-menu">
+                        <div class="footer-menu">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer-contact float-md-end">
+                        <h3>Contact Info</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="21.9995" cy="22.9961" r="21.5" stroke="#424242">
+                                            </circle>
+                                            <g clip-path="url(#clip0_2343_13859)">
+                                                <path d="M22.0218 13.9961C26.4153 14.0049 29.7134 17.7202 28.8665 21.6964C28.4484 23.66 27.5123 25.4261 26.3138 27.0614C25.1774 28.6116 23.9185 30.0879 22.6867 31.5779C22.2178 32.1454 21.804 32.1262 21.3001 31.5795C19.1664 29.2642 17.2295 26.8278 15.9102 24.0253C15.3696 22.8757 14.9978 21.6836 14.9995 20.4176C15.003 16.8701 18.1568 13.9881 22.0218 13.9961ZM22.0297 30.36C22.9045 29.2763 23.7479 28.3049 24.5037 27.2782C25.8116 25.5008 26.9568 23.6407 27.4616 21.5142C28.0739 18.934 26.466 16.3499 23.7566 15.5367C21.0149 14.713 18.0326 15.9324 16.8743 18.344C16.1858 19.777 16.3188 21.2091 16.8647 22.6413C17.6756 24.7695 18.9512 26.6632 20.399 28.4655C20.8889 29.0764 21.4226 29.6576 22.0297 30.36Z" fill="white"></path>
+                                                <path d="M24.7977 20.4357C24.7916 21.8486 23.5204 22.9982 21.9728 22.9886C20.4567 22.9797 19.2005 21.8197 19.1987 20.4253C19.1961 19.0148 20.4664 17.85 22.0043 17.8516C23.5432 17.8532 24.8029 19.0188 24.7977 20.4357ZM23.3953 20.4213C23.3953 19.7156 22.7873 19.1481 22.021 19.1384C21.2371 19.128 20.6011 19.702 20.6011 20.4213C20.6011 21.1253 21.2109 21.6937 21.9772 21.7033C22.7663 21.7121 23.3953 21.143 23.3953 20.4213Z" fill="white"></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_2343_13859">
+                                                    <rect width="14" height="18" fill="white" transform="translate(14.9995 13.9961)"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span> 
+                                    <b>Address:</b> New Town, WestBengal, 70001
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="21.9995" cy="22.9961" r="21.5" stroke="#424242">
+                                            </circle>
+                                            <g clip-path="url(#clip0_56_7)">
+                                                <path d="M26.9779 30.9959C25.7937 30.9581 24.6221 30.5625 23.5005 30.0096C19.5679 28.0716 16.6582 25.1275 14.8109 21.1599C14.2944 20.0502 13.9265 18.8947 14.0112 17.6423C14.0558 16.9879 14.2937 16.4177 14.7489 15.9459C15.1954 15.4839 15.6439 15.0233 16.1124 14.5833C16.9448 13.8008 17.8545 13.7981 18.6795 14.5866C19.3846 15.2596 20.075 15.9492 20.7514 16.6514C21.5858 17.5175 21.5732 18.3743 20.7348 19.2431C20.3969 19.5935 20.051 19.9387 19.6925 20.2685C19.5419 20.4072 19.5299 20.5161 19.6205 20.692C20.257 21.9198 21.1526 22.9459 22.1916 23.8359C22.8434 24.3941 23.5884 24.8434 24.2909 25.3425C24.4555 25.46 24.5754 25.4295 24.7174 25.2814C25.1092 24.8753 25.5058 24.4704 25.9276 24.0954C26.6407 23.4616 27.5164 23.4689 28.2035 24.1259C28.9725 24.8607 29.7269 25.6113 30.4647 26.3772C31.1558 27.0953 31.1784 27.9907 30.5187 28.7333C30.0415 29.2709 29.5317 29.782 29.0105 30.2784C28.4727 30.7915 27.8003 30.9952 26.9779 30.9959ZM27.0239 30.1377C27.6637 30.1616 28.1902 29.9307 28.6247 29.4647C28.9645 29.1004 29.3198 28.7499 29.6703 28.3962C30.2688 27.7922 30.2734 27.4119 29.6796 26.8199C29.0365 26.1781 28.3921 25.5376 27.7463 24.8985C27.2265 24.3841 26.8546 24.3848 26.3241 24.9045C25.9203 25.3 25.5244 25.7036 25.1206 26.0985C24.7974 26.415 24.5148 26.4774 24.1316 26.2418C23.4165 25.8011 22.6768 25.3823 22.0303 24.8534C20.6835 23.7523 19.5132 22.4853 18.7561 20.8917C18.5062 20.3661 18.5576 20.1597 18.9861 19.7502C19.3706 19.3825 19.7545 19.0141 20.1243 18.6325C20.6122 18.1301 20.6115 17.7518 20.1237 17.2586C19.4472 16.5724 18.7641 15.8921 18.0764 15.2171C17.5952 14.7446 17.1827 14.7512 16.6922 15.2284C16.311 15.5994 15.9478 15.989 15.5586 16.3507C15.0221 16.8491 14.8255 17.4597 14.8695 18.1739C14.9275 19.117 15.2221 19.9964 15.6179 20.838C17.3853 24.5985 20.1457 27.402 23.8823 29.2424C24.8707 29.7302 25.9036 30.0959 27.0239 30.1377Z" fill="white"></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_56_7">
+                                                    <rect width="17" height="17" fill="white" transform="translate(13.9995 13.9961)"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <b>Phone:</b> 7002980975
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="22" cy="22" r="21.5" stroke="#424242"></circle>
+                                            <path d="M22.2477 27.9994C19.9168 27.9994 17.5858 28.0001 15.2542 27.9987C14.1169 27.9981 13.5043 27.3807 13.5036 26.2358C13.5036 23.2881 13.5029 20.3398 13.5043 17.3915C13.505 16.2734 14.1258 15.6512 15.2432 15.6512C19.9394 15.6505 24.6363 15.6498 29.3325 15.6512C30.4472 15.6512 31.0652 16.2747 31.0659 17.397C31.0673 20.3453 31.0666 23.293 31.0659 26.2413C31.0652 27.3841 30.4513 27.9987 29.3098 27.9987C26.9556 28.0001 24.602 27.9994 22.2477 27.9994ZM15.307 16.7C15.4099 16.8119 15.4806 16.8955 15.5574 16.9724C17.3807 18.7861 19.2047 20.5998 21.0294 22.4128C21.8656 23.2436 22.7032 23.2449 23.538 22.4156C25.3627 20.6032 27.1861 18.7895 29.0101 16.9751C29.0876 16.8983 29.1589 16.8153 29.2659 16.7C24.5958 16.7 19.9765 16.7 15.307 16.7ZM24.8544 22.5404C24.1307 23.3417 23.4187 24.0654 22.2765 24.064C21.1337 24.0619 20.4326 23.319 19.7425 22.5795C18.2876 24.066 16.8511 25.534 15.4751 26.9403C19.9874 26.9403 24.6061 26.9403 29.1617 26.9403C27.7472 25.4956 26.3169 24.0345 24.8544 22.5404ZM18.8357 21.8716C17.413 20.4304 15.9765 18.9747 14.5627 17.5424C14.5627 20.3899 14.5627 23.2779 14.5627 26.2186C16.0342 24.7212 17.4658 23.2655 18.8357 21.8716ZM25.7338 21.7982C27.1408 23.2298 28.5752 24.6889 30.0123 26.1507C30.0123 23.2655 30.0123 20.3782 30.0123 17.4663C28.5539 18.9425 27.1209 20.394 25.7338 21.7982Z" fill="white"></path>
+                                        </svg>
+                                    </span>
+                                    <b>Email:</b> test@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="footer-copyright text-center text-white">
+                    <p>
+                        <span>©</span>2024 Ecoshop All rights reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!--Slick JS-->
+    <script src="js/slick.min.js"></script>
+    <!--Slick JS-->
+    <script src="js/custom.js"></script>
+</body>
+</html>

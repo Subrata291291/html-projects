@@ -1,0 +1,86 @@
+@mixin btn-prop {
+    border: none;
+    background-color: var(--ss-primary);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+@mixin btn-before {
+    color: #000;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    z-index: 1;
+}
+@mixin btn-hover-prop {
+    width: 100%;
+    transition: 0.3s;
+}
+@mixin top-header-before {
+    position: absolute;
+    content: "";
+    width: 0.5rem;
+    height: 6rem;
+    left: 1.7rem;
+    top: -0.8rem;
+}
+
+@mixin bg-prop {
+    background-size: cover;
+    background-position: center;
+}
+@mixin h3-font-prop {
+    color: $primary-color;
+    font-size: 2rem;
+    margin-bottom: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+@mixin h4-font-prop {
+    color: #000;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+@mixin before-animation {
+    background-color: rgba(255, 255, 255, 0.2);
+    content: "";
+    height: 200%;
+    left: -280px;
+    position: absolute;
+    top: -50%;
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+    transition: all 2000ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 80px;
+    z-index: 0;
+}
+@mixin after-animation {
+    background-color: rgba(255, 255, 255, 0.2);
+        content: "";
+        height: 200%;
+        left: 180%;
+        position: absolute;
+        top: -50%;
+        -webkit-transform: rotate(35deg);
+        transform: rotate(35deg);
+        transition: all 2000ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 80px;
+        z-index: 0;
+}
+@mixin hover-animation-before {
+    left: 180%;
+    transition: all 2000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+@mixin hover-animation-after {
+    left: -280px;
+    transition: all 2000ms cubic-bezier(0.19, 1, 0.22, 1);
+}

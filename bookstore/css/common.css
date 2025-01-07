@@ -1,0 +1,26 @@
+.commone_banner {
+    padding: 50px 0px;
+    background:url(../images/bg_brick.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.commone_banner h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #27AE61;
+}
+.commone_banner ul li {
+    display: inline-block;
+    padding: 0px 2px;
+}
+.commone_banner ul li .active {
+     color: #27AE61;
+}
+
+
+@media (max-width: 767px) {
+    .commone_banner {
+        padding: 30px 0px;
+    }
+}

@@ -1,0 +1,16 @@
+
+@mixin btn-prop {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border:none;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+@mixin btn-hover-prop {
+    background-color: var(--ss-secondary);
+}
+@mixin bg-prop {
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,1373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html {
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+p,h4,h1,h2,h3,h5{
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif; 
+}
+a {
+    text-decoration: none;
+}
+/***Banner-Section*****/
+
+.color-orange {
+    color:#FCC601; 
+}
+.color-white {
+    color:#fff; 
+}
+.color-red {
+    color:#DE2222; 
+}
+.color-blue {
+    color:#2643CB
+}
+.title {
+    font-size: 4.2rem;
+    font-weight: bold;
+    line-height: 4.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.bcw_banner_area {
+    background: url(../images/bcw_bnr.png) no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    padding: 5rem 0rem 9.8rem;
+    overflow: hidden;
+}
+.bcw_banner_txt_left h5 {
+    font-size: 3rem;
+    margin-top: 2.5rem;
+    font-weight: 500;
+    font-style: italic;
+}
+.bcw_banner_txt_left h1 {
+    font-size: 10rem;
+    font-weight: bold;
+    line-height: 13.8rem;
+}
+.bcw_banner_txt_left h3 {
+    font-size: 6.2rem;
+    font-weight: 600;
+    line-height: 4rem;
+}
+.bcw_banner_txt_left p {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 10.8rem;
+}
+.bcw_bnr_btn .submit_btn {
+    color: #000;
+    font-size: 4.4rem;
+    font-weight: bold;
+    background-image: linear-gradient(#88FF00, #FCC601);
+    width: 50.8rem;
+    height: 13.5rem;
+    border-radius: 8rem;
+    border: 1px solid #D3EB39;
+    line-height: 5.5rem;
+    margin-top: 4.8rem;
+    transition: 0.7s;
+    text-align: center;
+    text-shadow: 1px 3px 3px white;
+    transition: 0.3s;
+    box-shadow: 0px 3px 19px #00000057;
+}
+.bcw_bnr_btn .submit_btn:hover {
+    background-image: linear-gradient(#FCC601,#88FF00);
+    transition: 0.3s;
+}
+.bonus_offer_area h4 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 4rem 1.8rem 1.28rem 1.8rem;
+    position: relative;
+    font-weight: bold;
+    transform: rotate(4deg);
+}
+.bonus_offer_area {
+    background: url(../images/bonus_offer_bg.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 30rem;
+    max-width: 44.3rem;
+    width: 100%;
+    margin-bottom: -40px;
+    position: relative;
+}
+.bcw_banner_txt_right {
+    position: absolute;
+    bottom: -11%;
+    right: 0rem;
+}
+.bonus_offer_area h5 {
+    font-size: 2.6rem;
+    margin-top: 2rem;
+}
+.bonus_offer_area::before {
+    background: url(../images/arow.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    height: 11.2rem;
+    width: 21.2rem;
+    top: -130px;
+}
+
+
+
+.vs_area {
+    background: url(../images/money_bg.png) no-repeat;
+    background-position: 44% -163%;
+    padding: 5.8rem 0rem 11rem;
+}
+.vs_box {
+    max-width: 89.7rem;
+    margin: 0 auto;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    position: relative;
+}
+.vs_box::before {
+    background: url(../images/vs.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    top: -75px;
+    height: 19.5rem;
+    width:100%;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%);
+}
+.vs_box p {
+    max-width: 39.1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+.vs_box img {
+    width: 100%;
+}
+.vs_top {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    padding: 0.8rem 3.7rem;
+    border-radius: 5rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+.vs_left {
+    background-color: #162D9C;
+    border-radius: 2rem;
+    color: #fff;
+    padding: 4rem 2.7rem 5.1rem;
+    position: relative;
+}
+.vs_left img {
+    margin: 4.5rem 0rem 2rem 0rem;
+}
+.vs_right {
+    background-color: #2643CB;
+    border-radius: 2rem;
+    color: #fff;
+    padding: 4rem 2.7rem 5.1rem;
+    position: relative;
+}
+.vs_right .vs_top {
+    text-align: right;
+}
+.vs_right img {
+    margin: 4.5rem 0rem 2rem 0rem;
+}
+.vs_box .get_started_btn {
+    position: absolute;
+    bottom: -3.1rem;
+}
+.get_started_btn .btn {
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: bold;
+    line-height: 3.0rem;
+    border: 4px solid #E21010;
+    width: 22.1rem;
+    height: 6.3rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(#EC0E0E, #A00101);
+    border-radius: 3.2rem;
+    transition: 0.3s;
+    box-shadow: 0px 3px 19px #00000057;
+}
+.get_started_btn .btn:hover {
+    background-image: linear-gradient(#A00101,#EC0E0E);
+    transition: 0.3s;
+    border: 4px solid #E21010;
+    color: #fff;
+}
+.vs_area h3 {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 11rem;
+    font-weight: 400;
+}
+
+
+.why_jackpot_area {
+    background: url(../images/why_jack_bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 6.2rem 0rem 7.3rem;
+    position: relative;
+}
+.why_jackpot_middle h3 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: 5.4rem;
+}
+.why_jackpot_middle p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+}
+.why_jackpot_middle h5 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    margin: 1.6rem 0rem 2.8rem;
+}
+.why_jackpot_left img {
+    margin-left: -4rem;
+}
+.why_jackpot_left {
+    position: absolute;
+    bottom: 0;
+}
+.step-1  {
+    position: relative;
+}
+.step-2  {
+    position: relative;
+}
+.step-1 img {
+    background: url(../images/step-1-bg.png) no-repeat;
+    background-position: center;
+    padding: 10rem;
+    background-size: contain;
+}
+.step-1:before {
+    position: absolute;
+    content: "";
+    right: -4rem;
+    width: 6.4rem;
+    height: 6.4rem;
+    background: url(../images/arrow_right.png) no-repeat;
+    transform: translateY(21.3rem);
+}
+.step-2:before {
+    position: absolute;
+    content: "";
+    right: -4rem;
+    width: 6.4rem;
+    height: 6.4rem;
+    background: url(../images/arrow_right.png) no-repeat;
+    transform: translateY(21.3rem);
+}
+.step-2 img {
+    background: url(../images/step-2-bg.png) no-repeat;
+    background-position: center;
+    padding: 10rem;
+    position: relative;
+    background-size: contain;
+}
+.step-3 img {
+    background: url(../images/step-3-bg.png) no-repeat;
+    background-position: center;
+    padding: 10rem;
+    position: relative;
+    background-size: contain;
+}
+.use_jacpot_box h5 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: 5.4rem;
+    margin-top: 2rem;
+}
+.use_jacpot_box h4 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 5.4rem;
+}
+.use_jacpot_box p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+.use_jack_content {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+.result_txt {
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: 5.4rem;
+    margin-bottom: 4rem;
+}
+.use_jackpot_area {
+    padding: 5.4rem 0rem 7.2rem;
+}
+
+
+.prizes_area {
+   background: url(../images/prizes_bg.png) no-repeat;
+    background-position: center;
+    padding: 11.5rem 0rem 6.8rem;
+    background-size: cover; 
+    color: #fff;
+}
+.prizes_box {
+    max-width: 43.5rem;
+    margin: 0 auto;
+}
+.prizes_area h5 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: 5.4rem;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+}
+.prizes_box h3 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: 5.4rem;
+}
+.prizes_box p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+}
+.prizes_box img {
+    margin: 1.3rem 0rem 3rem;
+}
+.prize_box_right img {
+    margin: 2.7rem 0rem 4.5rem;
+}
+
+.testimonial_area h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    padding: 1.7rem 0rem 2.7rem;
+}
+.testimonial_area p {
+    font-size: 3rem;
+    font-style: italic;
+    line-height: 4.5rem;
+    margin: 0 auto;
+}
+.test_content_box.test_content_box1 p {
+    max-width: 37.9rem;
+}
+.test_content_box.test_content_box2 p {
+    max-width: 47.2rem;
+}
+.test_content_box.test_content_box3 p {
+    max-width: 42.2rem;
+}
+.author_pic img {
+    display: inline-block;
+}
+.tetimonial_box h3 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: 5.4rem;
+    margin-bottom: 3.6rem;
+}
+.love_title {
+    font-size: 4.2rem;
+    font-weight: bold;
+    line-height: 5.4rem;
+    text-transform: uppercase;
+}
+.tetimonial_box {
+    background: url(../images/love_bg.png) no-repeat;
+    background-size: contain;
+    padding: 4.83rem 0rem 8.8rem;
+    background-position: 56% -57%;
+}
+.test_content_box {
+    background-color: #EDF4FF;
+    border-radius: 1.5rem;
+}
+.test_content_box1 {
+
+}
+.testimonial_area {
+    position: relative;
+}
+.my-slider {
+      margin: 0rem 2.3rem;
+    }
+
+.test_content_box {
+    background-color: #EDF4FF;
+    border-radius: 1.5rem;
+    padding: 8rem 0rem 4rem;
+}
+.author_pic {
+    margin-bottom: -12%;
+}
+
+.gurantee_area .gurantee_title {
+    line-height: 5.4rem;
+}
+.gurantee_area .get_started_txt {
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: 5.4rem;
+}
+.gurantee_area {
+    background-image: linear-gradient(#FFF8DD,#fff);
+    padding: 5.8rem 0rem 8.4rem;
+}
+.gurantee_content {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3.8rem;
+    max-width: 148rem;
+    margin: 0 auto;
+}
+.gurantee_content h5 {
+    font-size: 7rem;
+    font-weight: bold;
+    line-height: 4.5rem;
+    margin: 4.1rem 0rem;
+}
+.bonus_offer_txt {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 4.5rem;
+    font-style: italic;
+}
+.plus_text {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 4.5rem;
+    margin-top: 2rem;
+}
+.bonus_entries_txt {
+    text-decoration: underline;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+    font-style: italic;
+    margin: 1.5rem 0rem 3.3rem;
+}
+.satisfy_icon {
+    margin: 4.7rem 0rem 2.4rem;
+}
+.off_rules {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 4.5rem;
+    color: #000;
+}
+
+.copyright_area {
+    background-color: #162D9C;
+    padding: 2.3rem 0rem;
+}
+.copyright_area p{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 6.2rem;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1700px) {
+
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1640px;
+}
+
+}
+
+@media (min-width: 1500px) {
+
+
+}
+
+@media (max-width: 1699.98px) {
+.bcw_bnr_btn .submit_btn {
+    font-size: 2.4rem;
+    width: 35.8rem;
+    height: 8.5rem;
+}
+.bonus_offer_area h5 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.bonus_offer_area h4 {
+    font-size: 2.4rem;
+    padding: 6.4rem 1.8rem 1.28rem 1.8rem;
+}
+.bcw_banner_txt_left h1 {
+    font-size: 6.5rem;
+}
+.bcw_banner_txt_left h3 {
+    font-size: 3.7rem;
+}
+.bcw_banner_txt_left p {
+    font-size: 2.5rem;
+}
+.bonus_offer_area {
+    margin-left: 1rem;
+}
+.bonus_offer_area::before {
+    top: -75px;
+}
+
+.why_jackpot_middle h3 {
+    font-size: 2rem;
+}
+.why_jackpot_left img {
+    max-width: 45rem;
+}
+
+.step-1 img {
+    padding: 4rem;
+}
+.step-2 img {
+    padding: 4rem;
+}
+.step-3 img {
+    padding: 4rem;
+}
+.step-1:before {
+    transform: translateY(15.3rem);
+}
+.step-2:before {
+    transform: translateY(15.3rem);
+}
+.testimonial_area p {
+    font-size: 2rem;
+    line-height: 3.5rem;
+}
+.my-slider {
+    margin: 0rem 1em;
+}
+.test_content_box {
+    padding: 8rem 1rem 4rem;
+}
+.tetimonial_box {
+    background-position: 56% -28%;
+}
+}
+
+@media (max-width: 1399.98px) {
+.bonus_offer_area h4 {
+    font-size: 1.4rem;
+    padding: 8rem 1.8rem 1.28rem 1.8rem;
+}
+.bonus_offer_area h5 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+.bonus_offer_area::before {
+    height: 8.2rem;
+    width: 14.2rem;
+    top: -30px;
+}
+.bonus_offer_area {
+    margin-left: 2rem;
+}
+.bcw_banner_txt_right {
+    bottom: -14%;
+}
+.vs_area {
+    background: url(../images/money_bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.why_jackpot_middle h3 {
+    font-size: 1.8rem;
+}
+.why_jackpot_middle h5 {
+    font-size: 1.6rem;
+}
+.title {
+    font-size: 3rem;
+}
+.why_jackpot_middle h3 {
+    font-size: 1.5rem;
+}
+.why_jackpot_middle p {
+    font-size: 1.6rem;
+}
+.why_jackpot_middle h5 {
+    font-size: 1.3rem;
+}
+.why_jackpot_left img {
+    max-width: 100%;
+}
+.why_jackpot_left img {
+    margin-left: -10rem;
+}
+
+.use_jacpot_box h4 {
+    font-size: 2.4rem;
+}
+.step-1 img {
+    max-width: 300px;
+}
+.step-2 img {
+    max-width: 300px;
+}
+.step-3 img {
+    max-width: 300px;
+}
+.step-1:before {
+    transform: translateY(11.3rem);
+}
+.step-2:before {
+    transform: translateY(11.3rem);
+}
+
+.gurantee_content h5 {
+    font-size: 4rem;
+    margin: 3rem 0rem;
+}
+.bonus_offer_txt {
+    font-size: 3rem;
+    line-height: 0.5rem;
+}
+.bonus_entries_txt {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+.logo {
+    max-width: 40%;
+}
+.bcw_banner_txt_left h1 {
+    line-height: 9.8rem;
+}
+}
+
+@media (max-width: 1299.98px) {
+    .prizes_area .get_started_btn {
+    margin-top: 4rem;
+}
+.tetimonial_box {
+    background-position: 56% -9%;
+}
+}
+
+@media (max-width:1199.98px) {
+.bcw_bnr_btn .submit_btn {
+    font-size: 2.4rem;
+    width: 30.8rem;
+    height: 8.5rem;
+}
+.bonus_offer_area::before {
+    height: 11.2rem;
+    width: 10.2rem;
+    top: -23px;
+}
+.bonus_offer_area h4 {
+    padding: 8rem 1.8rem 1.28rem 1.8rem;
+}
+.bonus_offer_area h5 {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+.bonus_offer_area {
+    margin-left: 0rem;
+}
+.bcw_banner_txt_left h1 {
+    font-size: 6rem;
+}
+.bcw_banner_txt_left h3 {
+    font-size: 4.2rem;
+    line-height: 4rem;
+}
+.bcw_banner_txt_left p {
+    font-size: 2.5rem;
+}
+.bonus_offer_area h4 {
+    padding: 9rem 1.8rem 1.28rem 1.8rem;
+}
+.step-1 img {
+    max-width: 250px;
+}
+.step-2 img {
+    max-width: 250px;
+}
+.step-3 img {
+    max-width: 250px;
+}
+.step-1:before {
+    transform: translateY(9.3rem);
+}
+.step-2:before {
+    transform: translateY(9.3rem);
+}
+.use_jacpot_box p {
+    font-size: 1.6rem;
+    text-align: justify;
+}
+.gurantee_content h5 {
+    font-size: 4rem;
+    line-height: 1.5rem;
+    margin: 3.1rem 0rem;
+}
+.bonus_offer_txt {
+    font-size: 3rem;
+}
+.bonus_entries_txt {
+    font-size: 2.7rem;
+}
+.why_jackpot_left {
+    position: inherit;
+    margin-bottom: -16%;
+}
+.why_jackpot_left img {
+    margin-left: 0rem;
+}
+.why_jackpot_left img {
+    max-width: 100%;
+}
+.why_jackpot_middle p {
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+}
+.why_jackpot_middle h3 {
+    font-size: 2.5rem;
+}
+.why_jackpot_middle h5 {
+    font-size: 2.3rem;
+}
+.why_jackpot_middle {
+    margin-bottom: 4rem;
+}
+.vs_area {
+    background-size: contain;
+    background-position: 44% -35%;
+}
+}
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1150px) {
+
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991.98px) {
+
+}
+
+@media (max-width:991px) {
+
+.logo  {
+    max-width: 300px;
+}
+.bcw_banner_area {
+    background: url(../images/bcb_bnr_mb.png) no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    padding: 5rem 0rem 9.8rem;
+    overflow: hidden;
+}
+.bcw_bnr_btn {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+.bcw_bnr_btn .submit_btn {
+    width: 58rem;
+    height: 8.5rem;
+}
+.bcb_bnr_books img {
+    width: 100%;
+}
+.bonus_offer_area {
+    height: 21rem;
+    margin-bottom: 4rem;
+}
+.bonus_offer_area h4 {
+    padding: 2rem 1.8rem 1.28rem 1.8rem;
+    font-size: 2rem;
+}
+.bonus_offer_area h5 {
+    margin-top: 1.6rem;
+    font-size: 2rem;
+}
+.bcw_banner_txt_right {
+    right: 14rem;
+}
+.bcw_banner_txt_left h3 {
+    font-size: 4rem;
+    line-height: 5rem;
+}
+.bcw_banner_txt_left p {
+    font-size: 3rem;
+}
+.bcb_bnr_books {
+    margin-bottom: 10rem;
+}
+.bcw_banner_txt_left p {
+    line-height: 6.8rem;
+}
+.bonus_offer_area::before {
+    height: 9.2rem;
+    width: 100%;
+    top: -114px;
+    left: 4%;
+    transform: rotateZ(120deg);
+}
+.bcw_banner_txt_right {
+    right: 4rem;
+}
+.bcw_banner_txt_right img {
+    width: 300px;
+}
+.vs_top {
+    font-size: 1.6rem;
+}
+.vs_box p {
+    font-size: 1.4rem;
+}
+.vs_box::before {
+    top: -81px;
+    width: 49.8%;
+}
+.vs_area h3 {
+    font-size: 1.6rem;
+    margin-bottom: 7rem;
+}
+.vs_area {
+    background-size: contain;
+    background-position: 42% -26%;
+}
+.tetimonial_box {
+    background-position: 56% -4%;
+}
+.why_jackpot_left {
+    display: none;
+}
+.why_jackpot_middle p {
+    max-width: 100%;
+}
+.why_jackpot_right img {
+    width: 100%;
+}
+.why_jackpot_middle .get_started_btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.why_jackpot_middle h5 {
+    font-size: 2rem;
+}
+.why_jackpot_middle p {
+    font-size: 1.8rem;
+}
+.why_jackpot_middle h3 {
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+.step-1 img {
+    max-width: 200px;
+}
+.step-2 img {
+    max-width: 200px;
+}
+.step-3 img {
+    max-width: 200px;
+}
+.step-1:before {
+    right: -3rem;
+    width: 4.4rem;
+    height: 4.4rem;
+     transform: translateY(7.7rem);
+    background-size: contain;
+}
+.step-2:before {
+    right: -3rem;
+    width: 4.4rem;
+    height: 4.4rem;
+     transform: translateY(7.7rem);
+    background-size: contain;
+}
+.use_jacpot_box h4 {
+    font-size: 1.8rem;
+}
+
+.prizes_box {
+    max-width: 62rem;
+}
+.prizes_area {
+    padding: 5.5rem 0rem 6.8rem;
+}
+.prizes_area h5 {
+    margin-bottom: 3rem;
+}
+.prizes_box.prize_box_right {
+    margin-top: 5rem;
+}
+.testimonial_area p {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+}
+.test_content_box {
+    padding: 4rem 1rem 4rem;
+}
+.tetimonial_box .slick-dots {
+    bottom: -70px;
+}
+.gurantee_content {
+    font-size: 2.2rem;
+}
+.gurantee_content h5 {
+    font-size: 4rem;
+    margin: 2.1rem 0rem;
+}
+.bonus_offer_txt {
+    font-size: 3.5rem;
+}
+.bonus_entries_txt {
+    font-size: 2.5rem;
+}
+.tetimonial_box .slick-dots li button:before {
+    font-size: 12px;
+}
+.use_jacpot_box p {
+    font-size: 1.5rem;
+}
+.tetimonial_box .slick-dots li.slick-active button:before {
+    color: #2643CB;
+}
+.tetimonial_box .slick-dots li button:before {
+    opacity: 100;
+    color: #DFE5FF;
+}
+}
+
+@media (max-width:767.98px) {
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 3rem;
+}
+.logo {
+    max-width: 22.5rem;
+}
+.bcw_banner_txt_left h5 {
+    font-size: 2rem;
+}
+.bcw_banner_txt_left h1 {
+    font-size: 5rem;
+    line-height: 9.8rem;
+}
+.bcw_banner_txt_left h3 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.bcw_banner_txt_left p {
+    font-size: 2rem;
+    line-height: 5.8rem;
+}
+.bcw_bnr_btn .submit_btn {
+    max-width: 48.4rem;
+    height: 9.4rem;
+}
+.bcw_banner_txt_right img {
+    max-width: 19.2rem;
+}
+.bonus_offer_area {
+    max-width: 16.8rem;
+}
+.bonus_offer_area h5 {
+    font-size: 1.1rem;
+    margin-left: -0.5rem;
+    margin-top: -1rem;
+    padding: 1rem;
+}
+.bonus_offer_area h4 {
+    padding: 0rem 1.8rem 1.28rem 1.8rem;
+    font-size: 1rem;
+}
+.bonus_offer_area::before {
+    width: 62%;
+    top: -75px;
+    left: 40%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    rotate: -31deg;
+}
+.bonus_offer_area {
+    height: auto;
+    padding: 2rem 0rem;
+    margin-bottom: 2rem;
+}
+.bcb_bnr_books {
+    margin-bottom: 3rem;
+}
+.title {
+    font-size: 3rem;
+    line-height: 5.4rem;
+}
+.vs_area h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5.7rem;
+}
+.vs_area {
+    background: url(../images/money_bg_mb.png) no-repeat;
+    background-position: 0% -14%;
+    padding: 5.8rem 0rem 5.2rem;
+}
+.vs_box {
+    max-width: 100%;
+    display: block;
+}
+.vs_box::before {
+    display: none;
+}
+.vs_top {
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 3.5rem;
+    top: -12px;
+}
+.vs_right .vs_top {
+    text-align: center;
+}
+.vs_box .get_started_btn {
+    width: 100%;
+}
+.vs_box .get_started_btn {
+    position: relative;
+    bottom: 0;
+}
+.get_started_btn .btn {
+    font-size: 3.2rem;
+    width: 100%;
+    height: 10.1rem;
+    border-radius: 5rem;
+    margin-top: 3.9rem;
+    box-shadow: 0px 3px 19px #00000057;
+}
+.why_jackpot_area {
+    padding: 4.4rem 0rem 5.2rem;
+}
+.why_jackpot_middle .title {
+    margin-bottom: 0rem;
+}
+.why_jackpot_middle h3 {
+    max-width: 30.8rem;
+    margin: 0 auto;
+}
+.vs_mb_pic img {
+    width: auto;
+}
+.vs_mb_pic {
+    margin: 1.28rem 0rem 2.5rem;
+}
+.btm_line_mb {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+}
+.why_jackpot_middle {
+    margin-bottom: 0rem;
+}
+.use_jackpot_area .title {
+    line-height: 4rem;
+}
+.use_jackpot_area {
+    padding: 3.1rem 0rem 8.3rem;
+}
+.use_jacpot_box p {
+    text-align: center;
+}
+.result_txt {
+    margin-bottom: 2rem;
+}
+.use_jackpot_area .title {
+    margin-bottom: 0rem;
+}
+.step-1 img {
+    background: url(../images/step1-bg-mb.png) no-repeat;
+    padding: 3rem 4rem 5rem;
+    background-size: contain;
+    background-position: top center;
+}
+.step-2 img {
+    background: url(../images/step1-bg-mb.png) no-repeat;
+    padding: 3rem 4rem 5rem;
+    background-size: contain;
+    background-position: top center;
+}
+.step-3 img {
+    background: url(../images/step1-bg-mb.png) no-repeat;
+    padding: 3rem 4rem 5rem;
+    background-size: contain;
+    background-position: top center;
+}
+.step-1:before {
+    display: none;
+}
+.step-2:before {
+    display: none;
+}
+.step-3:before {
+    display: none;
+}
+.use_jacpot_box h5 {
+    font-size: 2.2rem;
+        margin-top: 0rem;
+}
+.use_jacpot_box h4 {
+    font-size: 2.5rem;
+}
+.use_jacpot_box p {
+    font-size: 1.8rem;
+}
+.step-2 {
+    margin-top: 7.38rem;
+}
+.step-3 {
+    margin-top: 7.38rem;
+}
+.prizes_area {
+    padding: 6.7rem 0rem 5.1rem;
+}
+.prizes_area h4 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 5.4rem;
+}
+.prizes_box.prize_box_right {
+    margin-top: 9.5rem;
+}
+.prizes_area .get_started_btn {
+    margin-top: 0rem;
+}
+.prizes_area {
+    background: url(../images/prizes_bg_mb.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.why_jackpot_area {
+    background: url(../images/why_jack_bg_mb.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tetimonial_box {
+    background: url(../images/love_bg_mb.png) no-repeat;
+    background-size: contain;
+    padding: 18.6rem 0rem 6rem;
+    background-position: 0% -24%;
+}
+.tetimonial_box h3 {
+    line-height: 3.6rem;
+    max-width: 30.6rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+.testimonial_area {
+    margin-top: 3.6rem;
+}
+.testimonial_area h4 {
+    padding: 1.7rem 0rem;
+}
+.testimonial_area p {
+    line-height: 2.8rem;
+}
+.tetimonial_box .slick-dots li button:before {
+    font-size: 10px;
+}
+.tetimonial_box .slick-dotted.slick-slider {
+    margin-bottom: 27px;
+}
+.tetimonial_box .slick-dots {
+    bottom: -45px;
+}
+.gurantee_area .gurantee_title_mb {
+    line-height: 4rem;
+}
+.gurantee_content {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+.gurantee_content h5 {
+    font-size: 2.7rem;
+    margin: 2.5rem 0rem;
+}
+.bonus_offer_txt {
+    font-size: 1.9rem;
+    line-height: 1.7rem;
+}
+.plus_text {
+    font-size: 2rem;
+    line-height: 1.7rem;
+}
+.bonus_entries_txt {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+.gurantee_area .get_started_btn .btn {
+    margin-top: 0rem;
+}
+.bonus_entries_txt {
+    margin: 1.5rem 0rem 2.5rem;
+}
+.satisfy_icon {
+    margin: 3.7rem 0rem 2.7rem;
+}
+.gurantee_area {
+    padding: 5.8rem 0rem 4.7rem;
+}
+.copyright_area p {
+    font-size: 1.7rem;
+}
+.copyright_area {
+    padding: 1.1rem 0rem;
+}
+.vs_box p {
+    font-size: 1.7rem;
+    text-align: left;
+}
+}
+
+@media (max-width:550.98px) {
+
+.bcw_bnr_btn .submit_btn {
+    max-width: 39rem;
+}
+.copyright_area p {
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+}
+}
+
+@media (max-width:425.99px) {
+.bcw_banner_txt_right {
+    right: 1rem;
+}
+.bcw_bnr_btn .submit_btn {
+    max-width: 40.4rem;
+    box-shadow: 0px 3px 19px #00000057;
+}
+.vs_area {
+    background-position: -16% -11%;
+}
+.bcw_banner_txt_right {
+    right: 0rem;
+}
+.prizes_area h5 {
+    margin-bottom: 2rem;
+}
+.copyright_area p {
+    font-size: 1.4rem;
+}
+}
+
+@media (max-width:380.98px) {
+.bcw_bnr_btn .submit_btn {
+    max-width: 35rem;
+}
+.bcw_banner_txt_left h1 {
+    font-size: 4.5rem;
+}
+.why_jackpot_middle p {
+    font-size: 1.7rem;
+}
+.tetimonial_box {
+    background-position: 0% -11%;
+}
+.copyright_area p {
+    font-size: 1.2rem;
+}
+}
+
+@media (max-width:360px) {
+.bcw_banner_txt_left h1 {
+    font-size: 3.5rem;
+}
+.bcw_banner_txt_right img {
+    max-width: 13.2rem;
+}
+.bcw_bnr_btn .submit_btn {
+    max-width: 30rem;
+    height: 7.4rem;
+}
+.bcw_bnr_btn {
+    bottom: 5%;
+}
+.bcw_banner_txt_left p {
+    font-size: 1.6rem;
+}
+.title {
+    font-size: 2.5rem;
+    line-height: 3.4rem;
+}
+.vs_top {
+    font-size: 1.4rem;
+    padding: 0rem 3.7rem;
+}
+.get_started_btn .btn {
+    font-size: 2.5rem;
+    height: 6rem;
+}
+.btm_line_mb br {
+    display: none;
+}
+.use_jacpot_box h4 {
+    font-size: 2rem;
+}
+.copyright_area p {
+    font-size: 1.5rem;
+}
+.gurantee_content h5 {
+    font-size: 2.2rem;
+    margin: 2rem 0rem;
+}
+.bonus_offer_txt {
+    font-size: 1.5rem;
+}
+.gurantee_area .get_started_txt {
+    font-size: 2.4rem;
+}
+.vs_area h3 {
+    font-size: 1.6rem;
+}
+}
