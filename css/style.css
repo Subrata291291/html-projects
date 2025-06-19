@@ -609,6 +609,9 @@ a {
     }
 }
 @media  screen and (max-width: 767px) {
+    .header-area .navbar {
+        z-index: 1;
+    }
     .navbar-toggler-icon {
         filter: invert(100%);
     }
